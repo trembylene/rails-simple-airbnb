@@ -1,0 +1,13 @@
+<%= simple_form_for [@flat] do |f| %>
+  <div class="container-form">
+    <div class="form-group">
+      <%= f.input :name, class: 'form-control' %>
+      <%= f.input :address, class: 'form-control' %>
+      <%= f.input :description, class: 'form-control' %>
+      <%= f.input :price_per_night, class: 'form-control' %>
+      <%= f.input :number_of_guests, class: 'form-control' %>
+      <%= f.submit "Add", class: "btn btn-success" %>
+      <%= link_to "Refresh", :new_flat, class: "btn btn-danger" %>
+    </div>
+  </div>
+<% end %>
